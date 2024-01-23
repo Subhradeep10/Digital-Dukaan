@@ -9,24 +9,21 @@ import {
 
 export default function Home() {
   const perks = [
-    {
+      {
       name: 'Instant Delivery',
       Icon: ArrowDownToLine,
-      description:
-        'Get your assets delivered to your email in seconds and download them right away.',
-    },
-    {
-      name: 'Guaranteed Quality',
+      description: 'Receive your assets in seconds via email and start downloading immediately for a swift, seamless experience.',
+      },
+      {
+      name: 'Quality Assurance',
       Icon: CheckCircle,
-      description:
-        'Every asset on our platform is verified by our team to ensure our highest quality standards. Not happy? We offer a 30-day refund guarantee.',
-    },
-    {
-      name: 'For the Planet',
+      description: 'Our team meticulously verifies each asset to meet the highest quality standards. Not satisfied? Enjoy a 30-day refund guarantee.',
+      },
+      {
+      name: 'Green Initiatives',
       Icon: Leaf,
-      description:
-        "We've pledged 1% of sales to the preservation and restoration of the natural environment.",
-    },
+      description: "We're committed to environmental preservation. 1% of your purchase contributes to the restoration and protection of our planet.",
+      }
   ]
   return (
     <>
