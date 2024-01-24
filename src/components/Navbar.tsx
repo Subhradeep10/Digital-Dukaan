@@ -1,7 +1,9 @@
 import Link from "next/link"
-import MaxWidthWrapper from "../MaxWidthWrapper"
+import MaxWidthWrapper from "./MaxWidthWrapper"
 import { Icons } from "./Icons"
 import NavItems from "./Navitems"
+import Cart from "./Cart"
+import { buttonVariants } from "./ui/button"
 
 const Navbar = () => {
     return (
@@ -24,7 +26,7 @@ const Navbar = () => {
 
               <div className='ml-auto flex items-center'>
                 <div className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
-                  {/* {user ? null : (
+                  {/* {/* {user ? null : ( */}
                     <Link
                       href='/sign-in'
                       className={buttonVariants({
@@ -32,18 +34,18 @@ const Navbar = () => {
                       })}>
                       Sign in
                     </Link>
-                  )}
+                  {/* )} */}
 
-                  {user ? null : (
+                  {/* {user ? null : ( */}
                     <span
                       className='h-6 w-px bg-gray-200'
                       aria-hidden='true'
                     />
-                  )}
+                  {/* )} */}
 
-                  {user ? (
-                    <UserAccountNav user={user} />
-                  ) : (
+                  {/* {user ? ( */}
+                    {/* <UserAccountNav user={user} /> */}
+                  {/* ) : ( */}
                     <Link
                       href='/sign-up'
                       className={buttonVariants({
@@ -51,9 +53,9 @@ const Navbar = () => {
                       })}>
                       Create account
                     </Link>
-                  )}
+                  {/* )} */}
 
-                  {user ? (
+                  {/* {user ? (
                     <span
                       className='h-6 w-px bg-gray-200'
                       aria-hidden='true'
@@ -67,10 +69,10 @@ const Navbar = () => {
                         aria-hidden='true'
                       />
                     </div>
-                  )} */}
+                  )} */} 
 
                   <div className='ml-4 flow-root lg:ml-6'>
-                    {/* <Cart /> */}
+                    <Cart />
                   </div>
                 </div>
               </div>
